@@ -1,0 +1,22 @@
+<!doctype html>
+  <head>
+  </head>
+  <body>
+
+    <ul id="contacts">
+    </ul>
+
+    <input type="text" id="contact">
+    <button onclick="addContact($('#contact').val()); $('#contact').val('');">Add</button>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/js2.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

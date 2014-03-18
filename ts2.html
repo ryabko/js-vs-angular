@@ -1,0 +1,26 @@
+<!doctype html>
+  <head>
+  </head>
+  <body ng-app="myApp" ng-controller="ContactsCtrl as ctrl">
+
+    <ul>
+        <li ng-repeat="contact in contacts"> {{ contact }}
+            <a href="#" ng-click="ctrl.removeContact($index)">x</a>
+        </li>
+    </ul>
+
+    <input type="text" id="contact" ng-model="contact">
+    <button ng-click="ctrl.addContact(contact); contact = '';">Add</button>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/ts2.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
