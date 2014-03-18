@@ -1,0 +1,1 @@
+"use strict";angular.module("auction",[]);var auction;!function(a){!function(a){var b=function(){function a(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}return a.$inject=["$scope"],a}();a.MainController=b,angular.module("auction").controller("MainCtrl",b)}(a.controllers||(a.controllers={}));a.controllers}(auction||(auction={}));
